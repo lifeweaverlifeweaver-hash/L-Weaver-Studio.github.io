@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L-Weaver Studio | Софтуерни решения и разработка по проект</title>
-    <meta name="description" content="L-Weaver Studio предлага професионални софтуерни решения, чист код и вградено SEO. Скорост, която Google обожава.">
+    <title>L-Weaver Studio | Елитни Софтуерни Решения и Индивидуални Проекти</title>
     
-    <meta property="og:title" content="L-Weaver Studio - Индивидуални Софтуерни Решения">
-    <meta property="og:description" content="Разработка на софтуер за вашия бизнес с фокус върху скоростта и ефективността.">
+    <meta name="description" content="L-Weaver Studio от КЛИЙН-ХОУМ ЕООД. Разработка на софтуер по поръчка, AgroBrain навигация, финансова автоматизация и бързи уебсайтове. Скорост, която Google обожава.">
+    <meta name="keywords" content="софтуерни решения, разработка на софтуер, AgroBrain, KontoWeave, бизнес автоматизация, изработка на сайтове Варна, Аксаково">
+    
+    <meta property="og:title" content="L-Weaver Studio - Вашите идеи в работещ код">
+    <meta property="og:description" content="Индивидуални софтуерни проекти за малки и големи бизнеси.">
     <meta property="og:type" content="website">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -27,79 +29,166 @@
         }
     </script>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "L-Weaver Studio",
-      "operatingSystem": "All",
-      "applicationCategory": "BusinessApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "BGN"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "КЛИЙН-ХОУМ ЕООД"
-      }
-    }
-    </script>
-
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: white; }
-        .hero-gradient { background: radial-gradient(circle at center, #0070f310 0%, #0a0a0a 100%); }
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: white; scroll-behavior: smooth; }
+        .hero-gradient { background: radial-gradient(circle at center, #0070f315 0%, #0a0a0a 100%); }
+        .project-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
     </style>
 </head>
 <body>
 
-    <header class="p-6 flex justify-between items-center max-w-6xl mx-auto">
-        <div class="text-2xl font-bold tracking-tighter text-brandBlue">L-Weaver Studio</div>
-        <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-widest">
-            <a href="#services" class="hover:text-brandBlue transition">Услуги</a>
-            <a href="#about" class="hover:text-brandBlue transition">За нас</a>
-            <a href="#contact" class="bg-brandBlue px-4 py-2 rounded shadow-lg hover:opacity-90 transition">Контакт</a>
-        </nav>
+    <header class="sticky top-0 z-50 bg-darkBg/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-6xl mx-auto p-5 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tighter text-brandBlue italic">L-WEAVER STUDIO</div>
+            <nav class="hidden md:flex space-x-8 text-xs uppercase tracking-widest font-semibold">
+                <a href="#projects" class="hover:text-brandBlue">Проекти</a>
+                <a href="#services" class="hover:text-brandBlue">Услуги</a>
+                <a href="#contact" class="bg-brandBlue px-4 py-2 rounded shadow-lg hover:bg-blue-600 transition">Контакт</a>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero-gradient py-24 px-6 text-center">
-        <h1 class="text-5xl md:text-7xl font-bold mb-6">СКОРОСТ, КОЯТО <span class="text-brandBlue">GOOGLE ОБОЖАВА.</span></h1>
-        <p class="text-gray-400 text-xl max-w-2xl mx-auto mb-10">
-            Елитни софтуерни решения от независим разработчик. Чист код, вградено SEO и мобилна оптимизация.
+    <section class="hero-gradient py-24 px-6 text-center border-b border-gray-900">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+            СКОРОСТ, КОЯТО <br><span class="text-brandBlue uppercase">Google Обожава.</span>
+        </h1>
+        <p class="text-gray-400 text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+            Ние превръщаме комплексните бизнес идеи в елитни дигитални решения. 
+            От умни земеделски системи до пълна финансова автоматизация.
         </p>
-        <div class="flex flex-col md:flex-row justify-center gap-4">
-            <div class="p-4 border border-gray-800 rounded-xl bg-cardBg">
-                <span class="block text-3xl font-bold text-green-500">100/100</span>
-                <span class="text-xs text-gray-500 uppercase">Mobile PageSpeed Score</span>
+        <div class="inline-flex items-center p-1 px-4 border border-gray-800 rounded-full bg-cardBg text-sm text-gray-300">
+            <span class="flex h-2 w-2 rounded-full bg-green-500 mr-2"></span>
+            100/100 Mobile PageSpeed Оптимизация
+        </div>
+    </section>
+
+    <section id="projects" class="max-w-6xl mx-auto py-20 px-6">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+            <div>
+                <h2 class="text-brandBlue font-bold tracking-widest uppercase text-sm mb-2">Портфолио</h2>
+                <h3 class="text-4xl font-bold italic">Реални решения за реални бизнеси</h3>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="project-card bg-cardBg border border-gray-800 p-8 rounded-2xl">
+                <div class="text-brandBlue mb-4 font-bold tracking-tighter text-xl italic">AgroBrain</div>
+                <h4 class="text-white font-bold mb-3">Умна навигация за земеделие</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">Мобилна система за GPS управление на техника. Оптимизира разходите за гориво и повишава прецизността на полето.</p>
+            </div>
+
+            <div class="project-card bg-cardBg border border-gray-800 p-8 rounded-2xl">
+                <div class="text-brandBlue mb-4 font-bold tracking-tighter text-xl italic">KontoWeave</div>
+                <h4 class="text-white font-bold mb-3">Финансова Автоматизация</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">Автоматичен мост между онлайн магазини и счетоводство. Край на ръчното въвеждане на данни и грешките.</p>
+            </div>
+
+            <div class="project-card bg-cardBg border border-gray-800 p-8 rounded-2xl">
+                <div class="text-brandBlue mb-4 font-bold tracking-tighter text-xl italic">OmniVesta OS</div>
+                <h4 class="text-white font-bold mb-3">Корпоративен Мениджмънт</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">Цялостна операционна система за управление на бизнеси, екипи и процеси под един покрив.</p>
+            </div>
+
+            <div class="project-card bg-cardBg border border-gray-800 p-8 rounded-2xl">
+                <div class="text-brandBlue mb-4 font-bold tracking-tighter text-xl italic">ContoStore</div>
+                <h4 class="text-white font-bold mb-3">Е-Търговия от ново поколение</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">Високоефективни онлайн магазини с фокус върху продажбите и светкавичното зареждане на всяко устройство.</p>
+            </div>
+
+            <div class="project-card bg-cardBg border border-gray-800 p-8 rounded-2xl">
+                <div class="text-brandBlue mb-4 font-bold tracking-tighter text-xl italic">Build Pro</div>
+                <h4 class="text-white font-bold mb-3">Решения за Строителството</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">Интерактивни системи за представяне на проекти и автоматизирано привличане на клиенти в строителния сектор.</p>
+            </div>
+
+            <div class="project-card bg-cardBg border border-gray-800 p-8 rounded-2xl">
+                <div class="text-brandBlue mb-4 font-bold tracking-tighter text-xl italic">Dentist Pro</div>
+                <h4 class="text-white font-bold mb-3">Медицински Софтуер</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">Система за управление на пациенти и бързи онлайн записвания, изграждаща доверие в медицинските практики.</p>
             </div>
         </div>
     </section>
 
-    <section id="services" class="max-w-6xl mx-auto py-20 px-6">
-        <h2 class="text-3xl font-bold mb-12 text-center">Нашите Решения</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="p-8 rounded-2xl bg-cardBg border border-gray-800 hover:border-brandBlue transition">
-                <h3 class="text-xl font-bold mb-4">ЗЪБОЛЕКАРСКИ ПРАКТИКИ</h3>
-                <p class="text-gray-400 mb-4 font-light">DENTIST PRO: Изграждане на доверие и система за бързи записвания. Вградени JSON-LD маркери.</p>
-                <span class="text-brandBlue text-sm font-bold tracking-widest">MOBILE-FIRST DESIGN</span>
-            </div>
-            <div class="p-8 rounded-2xl bg-cardBg border border-gray-800 hover:border-brandBlue transition">
-                <h3 class="text-xl font-bold mb-4">СТРОИТЕЛНИ ФИРМИ</h3>
-                <p class="text-gray-400 mb-4 font-light">BUILD PRO: Интерактивни галерии „Преди & След“ и специализиран SEO маркер за строителен бизнес.</p>
-                <span class="text-brandBlue text-sm font-bold tracking-widest">HIGH CONVERSION</span>
+    <section id="services" class="bg-cardBg py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">Какво предлагаме?</h2>
+            <div class="grid md:grid-cols-2 gap-10 text-left">
+                <div class="flex gap-4">
+                    <div class="text-brandBlue font-bold text-2xl">01</div>
+                    <div>
+                        <h4 class="font-bold mb-2">Индивидуална разработка</h4>
+                        <p class="text-gray-400 text-sm">Създаваме софтуер точно по вашите искания и нужди, без излишни функции.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="text-brandBlue font-bold text-2xl">02</div>
+                    <div>
+                        <h4 class="font-bold mb-2">Бизнес Автоматизация</h4>
+                        <p class="text-gray-400 text-sm">Спираме загубата на време в повтарящи се задачи чрез интелигентни скриптове.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="text-brandBlue font-bold text-2xl">03</div>
+                    <div>
+                        <h4 class="font-bold mb-2">Mobile-First дизайн</h4>
+                        <p class="text-gray-400 text-sm">Вашият проект ще работи перфектно на телефон – там, където са вашите клиенти.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="text-brandBlue font-bold text-2xl">04</div>
+                    <div>
+                        <h4 class="font-bold mb-2">Вградено SEO</h4>
+                        <p class="text-gray-400 text-sm">Всеки проект е технически подготвен за челни позиции в търсачките още от първия ден.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="bg-cardBg py-20 px-6 text-center">
-        <h2 class="text-3xl font-bold mb-6">Готови ли сте за следващото ниво?</h2>
-        <p class="text-gray-400 mb-8">Свържете се с L-Weaver Studio за безплатна консултация по вашия индивидуален проект.</p>
-        <a href="mailto:lifeweaverlifeweaver@gmail.com" class="text-2xl font-bold text-brandBlue underline">lifeweaverlifeweaver@gmail.com</a>
+    <section id="contact" class="py-24 px-6 text-center">
+        <h2 class="text-4xl font-bold mb-4 italic uppercase">Започнете своя проект днес</h2>
+        <p class="text-gray-400 mb-10 max-w-xl mx-auto">Готови сме да реализираме вашата идея. Свържете се с нас за безплатна консултация.</p>
+        <div class="space-y-4">
+            <a href="mailto:lifeweaverlifeweaver@gmail.com" class="block text-2xl md:text-3xl font-bold text-brandBlue hover:underline">lifeweaverlifeweaver@gmail.com</a>
+            <p class="text-xl text-white font-semibold">Тел / Viber: 0884468329</p>
+        </div>
     </section>
 
-    <footer class="p-10 text-center text-gray-600 text-sm">
-        &copy; 2026 КЛИЙН-ХОУМ ЕООД | L-Weaver Studio. Всички права запазени.
+    <footer class="p-10 border-t border-gray-900 text-center text-gray-600 text-xs tracking-widest uppercase">
+        &copy; 2026 КЛИЙН-ХОУМ ЕООД | <span class="text-brandBlue font-bold">L-WEAVER STUDIO</span> | Зорница, Варна
     </footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "L-Weaver Studio",
+      "image": "https://lifeweaverlifeweaver-hash.github.io/L-Weaver-Studio.github.io/logo.png",
+      "@id": "",
+      "url": "https://lifeweaverlifeweaver-hash.github.io/L-Weaver-Studio.github.io/",
+      "telephone": "0884468329",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Зорница",
+        "addressLocality": "Аксаково",
+        "addressRegion": "Варна",
+        "postalCode": "9150",
+        "addressCountry": "BG"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
 
 </body>
 </html>
