@@ -3,154 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L-Weaver Studio | Елитни Софтуерни Решения & E-Commerce</title>
+    <title>L-Weaver Studio | Пълно Софтуерно Обслужване & Автоматизация</title>
     
-    <meta name="description" content="L-Weaver Studio предлага професионална разработка на WordPress магазини, технически SEO одити и индивидуални софтуерни системи като AgroBrain и KontoWeave.">
-    <meta name="keywords" content="изработка на онлайн магазин, WordPress, WooCommerce, SEO одит, софтуерни решения, AgroBrain, KontoWeave, Варна">
-    
+    <meta name="description" content="Елитни софтуерни решения: Изработка на сайтове, WordPress магазини, AgroBrain навигация и SEO одити на достъпни евро цени.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        brandBlue: '#0070f3',
-                        darkBg: '#0a0a0a',
-                        cardBg: '#161616'
-                    }
+                    colors: { brandBlue: '#0070f3', darkBg: '#0a0a0a', cardBg: '#161616' }
                 }
             }
         }
     </script>
-
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: white; scroll-behavior: smooth; }
         .hero-gradient { background: radial-gradient(circle at center, #0070f315 0%, #0a0a0a 100%); }
-        .project-card:hover { transform: translateY(-5px); transition: all 0.3s ease; border-color: #0070f3; }
-        .service-card { transition: all 0.3s ease; }
-        .service-card:hover { border-color: rgba(0, 112, 243, 0.5); box-shadow: 0 10px 30px -10px rgba(0, 112, 243, 0.2); }
+        .card-hover { transition: all 0.3s ease; border: 1px solid #262626; }
+        .card-hover:hover { border-color: #0070f3; transform: translateY(-5px); box-shadow: 0 10px 30px -15px rgba(0, 112, 243, 0.3); }
     </style>
 </head>
 <body>
 
-    <header class="sticky top-0 z-50 bg-darkBg/80 backdrop-blur-md border-b border-gray-800">
-        <div class="max-w-6xl mx-auto p-5 flex justify-between items-center">
-            <div class="text-2xl font-extrabold tracking-tighter text-brandBlue italic">L-WEAVER STUDIO</div>
-            <nav class="hidden md:flex space-x-8 text-[10px] uppercase tracking-[0.2em] font-bold">
-                <a href="#services" class="hover:text-brandBlue transition">Услуги</a>
-                <a href="#projects" class="hover:text-brandBlue transition">Проекти</a>
-                <a href="#news" class="hover:text-brandBlue transition">Новини</a>
-                <a href="#contact" class="bg-brandBlue px-5 py-2 rounded text-white hover:bg-blue-600 transition">Контакт</a>
+    <header class="sticky top-0 z-50 bg-darkBg/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto p-5 flex justify-between items-center">
+            <div class="text-2xl font-black italic tracking-tighter text-brandBlue">L-WEAVER STUDIO</div>
+            <nav class="hidden md:flex space-x-6 text-[10px] uppercase font-bold tracking-widest">
+                <a href="#services" class="hover:text-brandBlue">Услуги</a>
+                <a href="#projects" class="hover:text-brandBlue">Проекти</a>
+                <a href="#contact" class="bg-brandBlue px-4 py-2 rounded hover:bg-blue-600 transition">Запитване</a>
             </nav>
         </div>
     </header>
 
-    <section class="hero-gradient py-24 px-6 text-center border-b border-gray-900">
-        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
-            СКОРОСТ, КОЯТО <br><span class="text-brandBlue uppercase">Google Обожава.</span>
-        </h1>
-        <p class="text-gray-400 text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
-            Ние превръщаме комплексните бизнес идеи в елитни дигитални решения. 
-            От умни земеделски системи до светкавични онлайн магазини.
-        </p>
-        <div class="inline-flex items-center p-2 px-6 border border-gray-800 rounded-full bg-cardBg text-sm text-gray-300">
-            <span class="flex h-3 w-3 rounded-full bg-green-500 mr-3 animate-pulse"></span>
-            100/100 Mobile PageSpeed Оптимизация
-        </div>
+    <section class="hero-gradient py-20 px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-black mb-6 italic uppercase tracking-tighter">Дигитална мощ за <span class="text-brandBlue">всеки бизнес.</span></h1>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-8">Най-търсените софтуерни услуги на фиксирани и достъпни евро цени.</p>
     </section>
 
-    <section id="services" class="max-w-6xl mx-auto py-20 px-6">
-        <h2 class="text-brandBlue font-bold uppercase tracking-widest text-xs mb-10 text-center md:text-left underline decoration-2 underline-offset-8">Експертни Услуги</h2>
-        <div class="grid md:grid-cols-1 gap-8">
+    <section id="services" class="max-w-7xl mx-auto py-16 px-6">
+        <h2 class="text-brandBlue font-bold uppercase tracking-[0.3em] text-[10px] mb-12 text-center">Каталог Услуги 2026</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             
-            <div class="service-card bg-cardBg border border-gray-800 p-8 rounded-3xl flex flex-col md:flex-row justify-between items-center">
-                <div class="md:max-w-2xl text-center md:text-left">
-                    <div class="inline-block bg-brandBlue/10 text-brandBlue text-[10px] font-bold px-3 py-1 rounded-full uppercase mb-4 tracking-widest">Premium Package</div>
-                    <h3 class="text-3xl font-bold mb-4 italic text-white uppercase tracking-tighter">E-Commerce Решение (WP + WooCommerce)</h3>
-                    <ul class="text-gray-400 space-y-2 mb-8 text-sm inline-block text-left">
-                        <li class="flex items-center"><span class="text-brandBlue mr-3 text-lg">✔</span> Пълна конфигурация на WordPress & WooCommerce</li>
-                        <li class="flex items-center"><span class="text-brandBlue mr-3 text-lg">✔</span> Качване и SEO на 100 продукта (снимки и описания)</li>
-                        <li class="flex items-center"><span class="text-brandBlue mr-3 text-lg">✔</span> Интеграция на Еконт/Спиди и разплащателни методи</li>
-                        <li class="flex items-center"><span class="text-brandBlue mr-3 text-lg">✔</span> SSL сертификат и максимална защита</li>
+            <div class="card-hover bg-cardBg p-8 rounded-3xl flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold mb-2 uppercase italic text-white">Business Start (Landing Page)</h3>
+                    <p class="text-gray-500 text-sm mb-6">Бърз, модерен и оптимизиран сайт тип "Визитка" за малки фирми и специалисти.</p>
+                    <ul class="text-xs text-gray-400 space-y-2 mb-8 italic">
+                        <li>+ 100/100 Speed Score</li>
+                        <li>+ Мобилна версия</li>
+                        <li>+ Хостинг настройка</li>
                     </ul>
                 </div>
-                <div class="text-center bg-gray-900/50 p-8 rounded-2xl border border-gray-800 min-w-[260px] w-full md:w-auto">
-                    <div class="text-gray-500 uppercase text-[10px] font-bold tracking-[0.2em] mb-2">Фиксирана цена</div>
-                    <div class="text-5xl font-extrabold text-white mb-6 italic">€850</div>
-                    <a href="#contact" class="block w-full bg-brandBlue hover:bg-blue-600 text-white font-bold py-4 rounded-xl transition uppercase text-[10px] tracking-widest">Започни проект</a>
-                </div>
-            </div>
-
-            <div class="service-card bg-cardBg border border-gray-800 p-8 rounded-3xl flex flex-col md:flex-row justify-between items-center">
-                <div class="md:max-w-2xl text-center md:text-left">
-                    <h3 class="text-2xl font-bold mb-3 italic text-white uppercase tracking-tighter">Пълен Технически & SEO Одит</h3>
-                    <p class="text-gray-400 text-sm mb-0">Детайлен анализ на скоростта, мобилната адаптивност и SEO грешките. Пълен план за 100/100 точки в Google.</p>
-                </div>
-                <div class="text-center bg-gray-900/50 p-6 rounded-2xl border border-gray-800 min-w-[260px] w-full md:w-auto mt-6 md:mt-0">
-                    <div class="text-gray-500 uppercase text-[10px] font-bold tracking-[0.2em] mb-2">Еднократна такса</div>
-                    <div class="text-3xl font-extrabold text-white mb-4 italic">€150</div>
-                    <a href="#contact" class="block w-full border border-brandBlue text-brandBlue hover:bg-brandBlue hover:text-white font-bold py-3 rounded-xl transition uppercase text-[10px] tracking-widest">Поръчай одит</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="projects" class="max-w-6xl mx-auto py-20 px-6 border-t border-gray-900">
-        <h2 class="text-brandBlue font-bold uppercase tracking-widest text-xs mb-12 text-center">Реални софтуерни решения</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="project-card bg-cardBg border border-gray-800 p-8 rounded-2xl">
-                <div class="text-brandBlue mb-4 font-bold text-xl italic tracking-tighter">AgroBrain</div>
-                <h4 class="text-white font-bold mb-3 text-sm uppercase">Умна навигация за земеделие</h4>
-                <p class="text-gray-400 text-xs leading-relaxed">Мобилна система за GPS управление на земеделска техника. Повишава прецизността и намалява разходите.</p>
-            </div>
-            <div class="project-card bg-cardBg border border-gray-800 p-8 rounded-2xl">
-                <div class="text-brandBlue mb-4 font-bold text-xl italic tracking-tighter">KontoWeave</div>
-                <h4 class="text-white font-bold mb-3 text-sm uppercase">Финансова Автоматизация</h4>
-                <p class="text-gray-400 text-xs leading-relaxed">Автоматичен мост между онлайн магазини и счетоводство. Пълна синхронизация без грешки.</p>
-            </div>
-            <div class="project-card bg-cardBg border border-gray-800 p-8 rounded-2xl">
-                <div class="text-brandBlue mb-4 font-bold text-xl italic tracking-tighter">Dentist Pro</div>
-                <h4 class="text-white font-bold mb-3 text-sm uppercase">Медицински Софтуер</h4>
-                <p class="text-gray-400 text-xs leading-relaxed">Система за управление на пациенти и бързи онлайн записвания, вграждаща доверие.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="reviews" class="bg-cardBg py-20 px-6 border-y border-gray-900">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-center text-3xl font-bold mb-16 italic uppercase tracking-tighter">Доверието на клиентите ни</h2>
-            <div class="grid md:grid-cols-3 gap-10">
-                <div class="border-l-2 border-brandBlue pl-6">
-                    <p class="text-gray-400 italic text-sm mb-4">"AgroBrain промени работата ни на полето. Навигацията е безупречна."</p>
-                    <span class="text-white font-bold text-xs uppercase tracking-widest">— ЗЕМЕДЕЛЕЦ, ВАРНА</span>
-                </div>
-                <div class="border-l-2 border-brandBlue pl-6">
-                    <p class="text-gray-400 italic text-sm mb-4">"KontoWeave ни спестява часове ръчна работа всеки ден. Най-добрата инвестиция."</p>
-                    <span class="text-white font-bold text-xs uppercase tracking-widest">— Е-ТЪРГОВЕЦ</span>
-                </div>
-                <div class="border-l-2 border-brandBlue pl-6">
-                    <p class="text-gray-400 italic text-sm mb-4">"Сайтът ни вече лети, а клиентите се увеличават благодарение на одита."</p>
-                    <span class="text-white font-bold text-xs uppercase tracking-widest">— СТРОИТЕЛНА ФИРМА</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="news" class="max-w-4xl mx-auto py-20 px-6">
-        <h2 class="text-center text-brandBlue font-bold uppercase tracking-[0.3em] text-[10px] mb-12">Последно от Студиото</h2>
-        <div class="space-y-6">
-            <div class="bg-cardBg p-6 rounded-xl border border-gray-800 flex justify-between items-center">
                 <div>
-                    <h4 class="font-bold text-white italic italic">AgroBrain 2.0 Обновление</h4>
-                    <p class="text-gray-500 text-xs">Подобрена точност на GPS модула за 2026г.</p>
+                    <div class="text-3xl font-black text-white mb-4">€250 <span class="text-xs font-normal text-gray-500 italic">еднократно</span></div>
+                    <a href="#contact" class="block text-center border border-brandBlue text-brandBlue py-2 rounded-xl hover:bg-brandBlue hover:text-white transition text-[10px] font-bold uppercase">Избери план</a>
                 </div>
-                <span class="text-brandBlue font-bold text-[10px] uppercase tracking-widest">Active</span>
             </div>
+
+            <div class="card-hover bg-cardBg p-8 rounded-3xl border-brandBlue/50 relative overflow-hidden flex flex-col justify-between">
+                <div class="absolute top-0 right-0 bg-brandBlue text-[8px] px-4 py-1 font-bold uppercase tracking-widest text-white rotate-45 translate-x-4 translate-y-2 shadow-lg">Popular</div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2 uppercase italic text-white">E-Commerce Pro (WooCommerce)</h3>
+                    <p class="text-gray-500 text-sm mb-6">Пълен онлайн магазин с до 100 продукта, разплащания и куриери.</p>
+                    <ul class="text-xs text-gray-400 space-y-2 mb-8 italic">
+                        <li>+ Интеграция Еконт/Спиди</li>
+                        <li>+ Пълно обучение</li>
+                        <li>+ GDPR готовност</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-3xl font-black text-white mb-4">€850 <span class="text-xs font-normal text-gray-500 italic text-brandBlue">Най-добра цена</span></div>
+                    <a href="#contact" class="block text-center bg-brandBlue py-2 rounded-xl hover:bg-blue-600 transition text-[10px] font-bold uppercase">Започни сега</a>
+                </div>
+            </div>
+
+            <div class="card-hover bg-cardBg p-8 rounded-3xl flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold mb-2 uppercase italic text-white">Technical SEO Одит</h3>
+                    <p class="text-gray-500 text-sm mb-6">Пълен технически анализ и план за излизане на първа страница в Google.</p>
+                    <ul class="text-xs text-gray-400 space-y-2 mb-8 italic">
+                        <li>+ Проверка на конкуренция</li>
+                        <li>+ Анализ на ключови думи</li>
+                        <li>+ План за скорост</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-3xl font-black text-white mb-4">€150 <span class="text-xs font-normal text-gray-500 italic">еднократно</span></div>
+                    <a href="#contact" class="block text-center border border-gray-800 text-gray-400 py-2 rounded-xl hover:border-brandBlue hover:text-brandBlue transition text-[10px] font-bold uppercase">Заяви одит</a>
+                </div>
+            </div>
+
+            <div class="card-hover bg-cardBg p-8 rounded-3xl flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold mb-2 uppercase italic text-white">Индивидуален Софтуер</h3>
+                    <p class="text-gray-500 text-sm mb-6">Разработка на специфични системи (като AgroBrain или CRM за бизнеса).</p>
+                    <ul class="text-xs text-gray-400 space-y-2 mb-8 italic">
+                        <li>+ База данни</li>
+                        <li>+ Уникални функции</li>
+                        <li>+ Висока сигурност</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-3xl font-black text-white mb-4">€1500+ <span class="text-xs font-normal text-gray-500 italic">по проект</span></div>
+                    <a href="#contact" class="block text-center border border-gray-800 text-gray-400 py-2 rounded-xl hover:border-brandBlue hover:text-brandBlue transition text-[10px] font-bold uppercase">Консултация</a>
+                </div>
+            </div>
+
+            <div class="card-hover bg-cardBg p-8 rounded-3xl flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold mb-2 uppercase italic text-white">Месечна SEO & Support</h3>
+                    <p class="text-gray-500 text-sm mb-6">Поддръжка на сайта, качване на съдържание и проследяване на позиции.</p>
+                    <ul class="text-xs text-gray-400 space-y-2 mb-8 italic">
+                        <li>+ Backups & Security</li>
+                        <li>+ Контент маркетинг</li>
+                        <li>+ Месечен отчет</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-3xl font-black text-white mb-4">€80 <span class="text-xs font-normal text-gray-500 italic text-brandBlue">/месец</span></div>
+                    <a href="#contact" class="block text-center border border-gray-800 text-gray-400 py-2 rounded-xl hover:border-brandBlue hover:text-brandBlue transition text-[10px] font-bold uppercase">Абонирай се</a>
+                </div>
+            </div>
+
+            <div class="card-hover bg-cardBg p-8 rounded-3xl flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold mb-2 uppercase italic text-white">Speed Up (Оптимизация)</h3>
+                    <p class="text-gray-500 text-sm mb-6">Ускоряване на вече съществуващ бавен сайт до максималните му възможности.</p>
+                    <ul class="text-xs text-gray-400 space-y-2 mb-8 italic">
+                        <li>+ Оптимизация на код</li>
+                        <li>+ Намаляване тегло на снимки</li>
+                        <li>+ Бърз хостинг миграция</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-3xl font-black text-white mb-4">€120 <span class="text-xs font-normal text-gray-500 italic text-brandBlue">еднократно</span></div>
+                    <a href="#contact" class="block text-center border border-gray-800 text-gray-400 py-2 rounded-xl hover:border-brandBlue hover:text-brandBlue transition text-[10px] font-bold uppercase">Ускори сайта</a>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <section id="contact" class="py-24 px-6 text-center bg-black">
-        <h2 class="text-5xl font-extrabold mb-8
+    <section id="contact" class="bg-black py-20 px-6 text-center border-t border-gray-900">
+        <h2 class="text-3xl font-black italic uppercase mb-10 tracking-tighter">Свържи се с <span class="text-brandBlue text-4xl">L-Weaver Studio</span></h2>
+        <div class="space-y-4 text-gray-400">
+            <p>E-mail: <span class="text-white font-bold">lifeweaverlifeweaver@gmail.com</span></p>
+            <p>Тел: <span class="text-white font-bold">0884468329</span></p>
+            <p class="text-[8px] uppercase tracking-[0.4em] pt-10">КЛИЙН-ХОУМ ЕООД | Зорница, Варна | Разработка: Цветелина Стоянова</p>
+        </div>
+    </section>
+
+</body>
+</html>
