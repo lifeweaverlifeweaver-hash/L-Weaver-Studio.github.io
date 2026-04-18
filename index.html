@@ -17,10 +17,11 @@
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: white; scroll-behavior: smooth; }
         .hero-gradient { background: radial-gradient(circle at center, #0070f310 0%, #0a0a0a 100%); }
-        .logo-img { height: 65px; width: auto; object-fit: contain; }
-        .service-card { transition: all 0.3s ease; border: 1px solid #222; }
-        .service-card:hover { border-color: #0070f3; transform: translateY(-5px); }
-        .btn-primary { background: #0070f3; }
+        .logo-img { height: 60px; width: auto; object-fit: contain; filter: drop-shadow(0 0 10px rgba(0,112,243,0.4)); }
+        .service-card { transition: all 0.4s ease; border: 1px solid #222; }
+        .service-card:hover { border-color: #0070f3; transform: translateY(-10px); background: #161616; }
+        .btn-primary { background: linear-gradient(90deg, #0070f3, #00a2ff); }
+        .news-card { background: #0c0c0c; border-left: 2px solid #0070f3; }
     </style>
 </head>
 <body>
@@ -30,74 +31,86 @@
             <div class="flex items-center">
                 <img src="Screenshot_20260418_071841_Viber.jpg" alt="L-Weaver Studio" class="logo-img">
             </div>
-            <nav class="hidden md:flex space-x-10 text-[10px] uppercase font-black tracking-widest">
-                <a href="#services" class="hover:text-brandBlue">Услуги</a>
-                <a href="#software" class="hover:text-brandBlue">Софтуер</a>
-                <a href="#contact" class="btn-primary px-8 py-2.5 rounded-full text-white">Контакт</a>
+            <nav class="hidden md:flex space-x-10 text-[10px] uppercase font-black tracking-[0.3em]">
+                <a href="#services" class="hover:text-brandBlue transition">Услуги</a>
+                <a href="#software" class="hover:text-brandBlue transition">Софтуер</a>
+                <a href="#news" class="hover:text-brandBlue transition">Новини</a>
+                <a href="#contact" class="btn-primary px-8 py-2.5 rounded-full text-white hover:scale-105 transition">Контакт</a>
             </nav>
         </div>
     </header>
 
-    <section class="hero-gradient py-24 px-6 text-center">
-        <h1 class="text-5xl md:text-7xl font-black mb-8 uppercase tracking-tighter italic leading-tight">
+    <section class="hero-gradient py-32 px-6 text-center">
+        <h1 class="text-6xl md:text-8xl font-black mb-8 uppercase tracking-tighter italic leading-none">
             СКОРОСТ, КОЯТО <br><span class="text-brandBlue">GOOGLE ОБОЖАВА.</span>
         </h1>
-        <p class="text-gray-400 text-lg max-w-3xl mx-auto mb-10 italic">
-            Елитни WordPress теми от независим разработчик. Гарантирани 100/100 Mobile Speed резултати.
+        <p class="text-gray-400 text-xl max-w-3xl mx-auto mb-12 font-light italic">
+            Елитни WordPress теми и технически SEO одити. Гарантирани <span class="text-white font-bold">100/100 Mobile Speed</span> показатели.
         </p>
     </section>
 
-    <section id="services" class="max-w-7xl mx-auto py-20 px-6">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="service-card bg-cardBg p-10 rounded-3xl">
-                <div class="text-brandBlue text-[10px] font-bold mb-4 italic underline">DENTIST PRO</div>
-                <h3 class="text-xl font-black mb-4 uppercase italic">Зъболекарски Практики</h3>
-                <p class="text-gray-500 text-sm mb-8">Доверие и бързи записвания. JSON-LD маркер Dentist за Google.</p>
-                <div class="text-3xl font-black mb-6 italic">€450</div>
-                <a href="#contact" class="btn-primary block text-center py-3 rounded-xl font-bold uppercase text-[10px]">Заяви</a>
+    <section id="services" class="max-w-7xl mx-auto py-24 px-6">
+        <div class="text-center mb-20">
+            <h2 class="text-brandBlue font-bold uppercase tracking-[0.5em] text-xs mb-4 italic">Елитно Портфолио</h2>
+            <p class="text-4xl font-black uppercase italic tracking-tight">Специализирани Услуги</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="service-card bg-cardBg p-10 rounded-[2.5rem]">
+                <div class="text-brandBlue text-[10px] font-black uppercase tracking-widest mb-6 italic underline">DENTIST PRO</div>
+                <h3 class="text-2xl font-black mb-4 uppercase italic">Зъболекари</h3>
+                <p class="text-gray-500 text-sm mb-10">Автоматизация на часове и JSON-LD маркер за локално SEO.</p>
+                <div class="text-4xl font-black mb-8 italic">€450</div>
             </div>
 
-            <div class="service-card bg-cardBg p-10 rounded-3xl border-brandBlue/20">
-                <div class="text-brandBlue text-[10px] font-bold mb-4 italic underline">BUILD PRO</div>
-                <h3 class="text-xl font-black mb-4 uppercase italic">Строителни Фирми</h3>
-                <p class="text-gray-500 text-sm mb-8">Галерии "Преди & След", JSON-LD маркер ConstructionBusiness.</p>
-                <div class="text-3xl font-black mb-6 italic">€650</div>
-                <a href="#contact" class="btn-primary block text-center py-3 rounded-xl font-bold uppercase text-[10px]">Заяви</a>
+            <div class="service-card bg-cardBg p-10 rounded-[2.5rem] border-brandBlue/20 shadow-xl shadow-brandBlue/5">
+                <div class="text-brandBlue text-[10px] font-black uppercase tracking-widest mb-6 italic underline">BUILD PRO</div>
+                <h3 class="text-2xl font-black mb-4 uppercase italic">Строители</h3>
+                <p class="text-gray-500 text-sm mb-10">Представяне на обекти и JSON-LD ConstructionBusiness маркер.</p>
+                <div class="text-4xl font-black mb-8 italic">€650</div>
             </div>
 
-            <div class="service-card bg-cardBg p-10 rounded-3xl">
-                <div class="text-brandBlue text-[10px] font-bold mb-4 italic underline">PERFORMANCE</div>
-                <h3 class="text-xl font-black mb-4 uppercase italic">SEO & Speed Одит</h3>
-                <p class="text-gray-500 text-sm mb-8">Пълна оптимизация за максимални PageSpeed показатели.</p>
-                <div class="text-3xl font-black mb-6 italic">€120</div>
-                <a href="#contact" class="block text-center border border-gray-800 text-gray-500 py-3 rounded-xl font-bold uppercase text-[10px]">Поръчай</a>
+            <div class="service-card bg-cardBg p-10 rounded-[2.5rem]">
+                <div class="text-brandBlue text-[10px] font-black uppercase tracking-widest mb-6 italic underline">LEGAL TECH</div>
+                <h3 class="text-2xl font-black mb-4 uppercase italic">Анти-Плагиатство</h3>
+                <p class="text-gray-500 text-sm mb-10">Защита на авторско съдържание и код. Мониторинг срещу неоторизирано копиране.</p>
+                <div class="text-4xl font-black mb-8 italic text-brandBlue">По запитване</div>
             </div>
         </div>
     </section>
 
-    <section id="software" class="bg-[#0c0c0c] py-24 px-6 border-y border-white/5">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+    <section id="news" class="max-w-7xl mx-auto py-24 px-6 border-t border-white/5">
+        <h2 class="text-3xl font-black uppercase italic mb-12">Новини в разработката</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="news-card p-8 rounded-2xl">
+                <span class="text-brandBlue font-bold text-xs uppercase tracking-widest underline italic">Agro Sector Update</span>
+                <h4 class="text-xl font-bold mt-4 mb-2 italic">Интелигентна навигация 2.0</h4>
+                <p class="text-gray-500 text-sm italic">Интегрираме AI модули в AgroBrain за прецизно земеделие и анализ на почвата в реално време.</p>
+            </div>
+            <div class="news-card p-8 rounded-2xl">
+                <span class="text-brandBlue font-bold text-xs uppercase tracking-widest underline italic">Finance & Fintech</span>
+                <h4 class="text-xl font-bold mt-4 mb-2 italic">KontoWeave Core</h4>
+                <p class="text-gray-500 text-sm italic">Нова архитектура за счетоводна автоматизация с нулев процент на грешка при трансакциите.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-40 px-6 bg-[#050505] border-t border-white/5">
+        <div class="max-w-7xl mx-auto text-center md:text-left grid md:grid-cols-2 gap-20 items-center">
             <div>
-                <h3 class="text-4xl font-black italic uppercase mb-6 tracking-tighter">AgroBrain & KontoWeave</h3>
-                <p class="text-gray-400 leading-relaxed mb-8 italic text-lg">
-                    Специализиран софтуер за автоматизация на земеделие и счетоводство.
-                </p>
+                <h2 class="text-5xl md:text-7xl font-black mb-10 italic uppercase tracking-tighter">Свържете се <br>директно</h2>
+                <div class="space-y-6">
+                    <p class="text-3xl font-light italic">lifeweaverlifeweaver@gmail.com</p>
+                    <p class="text-5xl font-black text-brandBlue italic tracking-tighter">0884468329</p>
+                </div>
             </div>
-            <div class="bg-cardBg p-10 rounded-3xl border border-white/5 shadow-2xl">
-                <div class="text-brandBlue font-black text-4xl italic mb-2">100%</div>
-                <div class="text-[10px] uppercase text-gray-600 font-bold tracking-widest">Clean Code Quality</div>
+            <div class="bg-cardBg p-12 rounded-[3rem] border border-white/5 text-center">
+                <p class="text-gray-500 uppercase tracking-[0.4em] font-black mb-4 italic text-xs">Цветелина Стоянова | Независим Разработчик</p>
+                <p class="text-gray-400 italic text-sm mb-12">L-Weaver Studio: Където кодът среща изкуството на скоростта.</p>
+                <div class="pt-10 border-t border-white/5 text-[10px] text-gray-700 uppercase tracking-[0.2em] italic">
+                    &copy; 2026 КЛИЙН-ХОУМ ЕООД | Зорница, Аксаково, Варна
+                </div>
             </div>
-        </div>
-    </section>
-
-    <footer id="contact" class="py-32 px-6 text-center">
-        <div class="max-w-2xl mx-auto">
-            <h2 class="text-4xl font-black mb-12 italic uppercase">Свържи се с <span class="text-brandBlue">L-Weaver Studio</span></h2>
-            <a href="mailto:lifeweaverlifeweaver@gmail.com" class="text-xl md:text-2xl hover:text-brandBlue transition">lifeweaverlifeweaver@gmail.com</a>
-            <p class="text-4xl font-black mt-6 italic">0884468329</p>
-            <p class="text-[9px] text-gray-700 uppercase tracking-[0.4em] mt-24">
-                &copy; 2026 КЛИЙН-ХОУМ ЕООД | Варна, Зорница
-            </p>
         </div>
     </footer>
 
