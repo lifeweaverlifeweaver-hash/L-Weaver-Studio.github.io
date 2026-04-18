@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="L-Weaver Studio - Елитни софтуерни решения, скорост 100/100 и защита от плагиатство.">
+    <meta name="description" content="L-Weaver Studio - Професионален софтуерен развой, агро системи и анти-плагиатство.">
     <title>L-Weaver Studio | Елитни Софтуерни Решения</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,15 +18,15 @@
     </script>
 
     <style>
-        body { font-family: system-ui, -apple-system, sans-serif; background-color: #0a0a0a; color: white; scroll-behavior: smooth; }
+        body { font-family: system-ui, -apple-system, sans-serif; background-color: #0a0a0a; color: white; scroll-behavior: smooth; margin: 0; }
         .hero-gradient { background: radial-gradient(circle at center, #0070f308 0%, #0a0a0a 100%); }
-        .logo-img { height: 60px; width: auto; aspect-ratio: 314/104; }
-        .service-card { border: 1px solid #222; transition: all 0.3s ease; }
-        .service-card:hover { border-color: #0070f3; background: #161616; transform: translateY(-5px); }
-        .btn-primary { background: #0070f3; color: white; transition: transform 0.2s; }
-        .btn-primary:hover { transform: scale(1.05); }
-        .contact-link { transition: all 0.3s ease; }
-        .contact-link:hover { opacity: 0.8; transform: translateY(-2px); }
+        .logo-img { height: 60px; width: auto; object-fit: contain; }
+        .service-card { border: 1px solid #222; background: #111; transition: all 0.3s ease; height: 100%; }
+        .service-card:hover { border-color: #0070f3; transform: translateY(-5px); background: #161616; }
+        .btn-call { background: #0070f3; transition: all 0.2s; }
+        .btn-call:hover { background: #005ecf; transform: scale(1.05); }
+        .viber-btn { background: #7360f2; }
+        .whatsapp-btn { background: #25d366; }
     </style>
 </head>
 <body>
@@ -34,70 +34,104 @@
     <header class="sticky top-0 z-50 bg-darkBg/95 backdrop-blur-md border-b border-white/10">
         <div class="max-w-7xl mx-auto p-4 flex justify-between items-center">
             <img src="Screenshot_20260418_071841_Viber.jpg" alt="L-Weaver Studio Logo" class="logo-img" width="180" height="60">
-            
             <nav class="hidden md:flex space-x-8 text-[10px] uppercase font-black tracking-widest">
                 <a href="#services" class="hover:text-brandBlue transition">Услуги</a>
                 <a href="#news" class="hover:text-brandBlue transition">Новини</a>
-                <a href="#contact" class="btn-primary px-6 py-2 rounded-full" aria-label="Към секция контакти">Контакт</a>
+                <a href="#contact" class="hover:text-brandBlue transition">Контакт</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero-gradient py-24 px-6 text-center">
-            <h1 class="text-5xl md:text-8xl font-black mb-8 uppercase tracking-tighter italic leading-tight">
-                СКОРОСТ, КОЯТО <br><span class="text-brandBlue">GOOGLE ОБОЖАВА.</span>
+        <section class="hero-gradient py-20 px-6 text-center">
+            <h1 class="text-5xl md:text-7xl font-black mb-8 uppercase tracking-tighter italic leading-tight">
+                СКОРОСТ, КОЯТО <br><span class="text-brandBlue text-6xl md:text-8xl">GOOGLE ОБОЖАВА.</span>
             </h1>
-            <p class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto italic mb-10">
-                Гарантирани <span class="text-white font-bold">100/100 Mobile PageSpeed</span> показатели. Елитни софтуерни системи от независим разработчик.
+            <p class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto italic">
+                Оптимизация до <span class="text-white font-bold">100/100 Mobile PageSpeed</span>. Елитни софтуерни архитектури за бизнеса.
             </p>
         </section>
 
-        <section id="services" class="max-w-7xl mx-auto py-20 px-6">
+        <section id="services" class="max-w-7xl mx-auto py-16 px-6">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <article class="service-card bg-cardBg p-10 rounded-[2.5rem]">
-                    <h2 class="text-brandBlue text-[10px] font-bold mb-4 uppercase tracking-widest italic underline">Dentist Pro</h2>
-                    <h3 class="text-2xl font-black mb-4 uppercase italic">Зъболекари</h3>
-                    <p class="text-gray-500 text-sm mb-8 italic">JSON-LD маркер Dentist за максимално локално SEO.</p>
-                    <div class="text-4xl font-black italic">€450</div>
+                <article class="service-card p-8 rounded-[2rem]">
+                    <span class="text-brandBlue text-[10px] font-bold uppercase tracking-widest underline italic">Dentist Pro</span>
+                    <h2 class="text-2xl font-black my-4 uppercase italic">Зъболекари</h2>
+                    <p class="text-gray-500 text-sm mb-8">Интеграция на JSON-LD маркер Dentist за локално търсене и автоматизация на записи.</p>
+                    <div class="text-3xl font-black italic">€450</div>
                 </article>
 
-                <article class="service-card bg-cardBg p-10 rounded-[2.5rem] border-brandBlue/30">
-                    <h2 class="text-brandBlue text-[10px] font-bold mb-4 uppercase tracking-widest italic underline">Legal Tech</h2>
-                    <h3 class="text-2xl font-black mb-4 uppercase italic">Анти-Плагиатство</h3>
-                    <p class="text-gray-500 text-sm mb-8 italic">Защита на авторски код и съдържание срещу копиране.</p>
-                    <div class="text-4xl font-black italic text-brandBlue">По запитване</div>
+                <article class="service-card p-8 rounded-[2rem] border-brandBlue/30">
+                    <span class="text-brandBlue text-[10px] font-bold uppercase tracking-widest underline italic">Legal Tech</span>
+                    <h2 class="text-2xl font-black my-4 uppercase italic">Анти-Плагиатство</h2>
+                    <p class="text-gray-500 text-sm mb-8">Защита на авторско съдържание и софтуерен код чрез иновативни алгоритми за мониторинг.</p>
+                    <div class="text-3xl font-black italic text-brandBlue">По запитване</div>
                 </article>
 
-                <article class="service-card bg-cardBg p-10 rounded-[2.5rem]">
-                    <h2 class="text-brandBlue text-[10px] font-bold mb-4 uppercase tracking-widest italic underline">Build Pro</h2>
-                    <h3 class="text-2xl font-black mb-4 uppercase italic">Строители</h3>
-                    <p class="text-gray-500 text-sm mb-8 italic">Галерии "Преди & След" и JSON-LD ConstructionBusiness.</p>
-                    <div class="text-4xl font-black italic">€650</div>
+                <article class="service-card p-8 rounded-[2rem]">
+                    <span class="text-brandBlue text-[10px] font-bold uppercase tracking-widest underline italic">Performance</span>
+                    <h2 class="text-2xl font-black my-4 uppercase italic">SEO & Speed</h2>
+                    <p class="text-gray-500 text-sm mb-8">Технически одити и ускоряване на съществуващи платформи до максимални показатели.</p>
+                    <div class="text-3xl font-black italic">€120</div>
                 </article>
             </div>
         </section>
 
-        <section id="news" class="bg-[#0c0c0c] py-24 px-6 border-y border-white/5">
+        <section id="news" class="bg-[#0c0c0c] py-20 px-6 border-y border-white/5">
             <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl font-black uppercase italic mb-12 tracking-tighter">Новини в разработката</h2>
-                <div class="grid md:grid-cols-2 gap-12">
-                    <div class="border-l-2 border-brandBlue pl-8">
-                        <span class="text-brandBlue text-[10px] font-bold uppercase tracking-widest">Agro Sector</span>
-                        <h4 class="text-xl font-bold my-3 italic">AgroBrain AI Навигация</h4>
-                        <p class="text-gray-500 text-sm italic">Интеграция на модули за прецизно земеделие и анализ на реколтата.</p>
+                <h2 class="text-3xl font-black uppercase italic mb-12">Новини в разработката</h2>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="border-l-2 border-brandBlue pl-6">
+                        <span class="text-brandBlue text-[10px] font-bold uppercase">Agro Sector Update</span>
+                        <h3 class="text-xl font-bold my-2 italic">AgroBrain: Прецизно земеделие</h3>
+                        <p class="text-gray-500 text-sm italic">Разработка на AI модули за анализ на почвата и навигация в реално време.</p>
                     </div>
-                    <div class="border-l-2 border-brandBlue pl-8">
-                        <span class="text-brandBlue text-[10px] font-bold uppercase tracking-widest">Finance</span>
-                        <h4 class="text-xl font-bold my-3 italic">KontoWeave Автоматизация</h4>
-                        <p class="text-gray-500 text-sm italic">Счетоводни системи с автоматизирано разпознаване на разходи.</p>
+                    <div class="border-l-2 border-brandBlue pl-6">
+                        <span class="text-brandBlue text-[10px] font-bold uppercase">Fintech Update</span>
+                        <h3 class="text-xl font-bold my-2 italic">KontoWeave: Счетоводна мощ</h3>
+                        <p class="text-gray-500 text-sm italic">Автоматизирано разпознаване на фактури и банкови извлечения с 0% риск.</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer id="contact" class="py-32 px-6 bg-darkBg border-t border-white/5">
+    <footer id="contact" class="py-24 px-6 bg-darkBg border-t border-white/5">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div>
-                <h2 class="text-5xl md:text
+                <h2 class="text-5xl md:text-7xl font-black mb-8 uppercase italic tracking-tighter leading-none">
+                    Свържете се <br><span class="text-brandBlue text-4xl md:text-6xl">директно сега</span>
+                </h2>
+                
+                <div class="space-y-8">
+                    <a href="tel:+359884468329" class="btn-call inline-flex items-center gap-4 px-8 py-4 rounded-2xl text-2xl font-black italic" aria-label="Обаждане по телефон">
+                        📞 0884468329
+                    </a>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="viber://chat?number=%2B359884468329" class="viber-btn px-6 py-3 rounded-xl font-bold uppercase text-xs tracking-widest hover:opacity-80 transition" aria-label="Viber чат">
+                            Viber
+                        </a>
+                        <a href="https://wa.me/359884468329" class="whatsapp-btn px-6 py-3 rounded-xl font-bold uppercase text-xs tracking-widest hover:opacity-80 transition" aria-label="WhatsApp чат">
+                            WhatsApp
+                        </a>
+                    </div>
+
+                    <a href="mailto:lifeweaverlifeweaver@gmail.com" class="block text-xl font-light italic text-gray-400 hover:text-brandBlue transition" aria-label="Email">
+                        lifeweaverlifeweaver@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-cardBg p-10 rounded-[3rem] border border-white/10">
+                <p class="text-gray-500 uppercase tracking-[0.3em] font-black mb-4 italic text-xs">Цветелина Стоянова | L-Weaver Studio</p>
+                <p class="text-gray-400 italic text-sm mb-10">Професионален развой на софтуер с акцент върху екстремната скорост.</p>
+                <div class="pt-8 border-t border-white/5 text-[10px] text-gray-700 uppercase tracking-widest italic">
+                    &copy; 2026 КЛИЙН-ХОУМ ЕООД | Зорница, Аксаково, Варна
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
