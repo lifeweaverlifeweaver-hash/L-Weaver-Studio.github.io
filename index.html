@@ -3,18 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L-Weaver Studio | Елитни Софтуерни Решения & SEO</title>
+    <title>L-Weaver Studio | Елитни WordPress Теми & SEO</title>
     
-    <meta name="description" content="L-Weaver Studio - Елитни WordPress теми и SEO. Скорост, която Google обожава.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "L-Weaver Studio",
+      "image": "https://lifeweaverlifeweaver-hash.github.io/L-Weaver-Studio.github.io/logo.png",
+      "description": "Елитни WordPress теми, технически SEO одити и софтуерна автоматизация.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Варна",
+        "addressCountry": "BG"
+      },
+      "telephone": "0884468329",
+      "priceRange": "€150 - €1500"
+    }
+    </script>
+
+    <meta name="description" content="L-Weaver Studio - Скорост, която Google обожава. 100/100 PageSpeed резултати. Техническо SEO и елитни теми.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
-                extend: {
-                    colors: { brandBlue: '#0070f3', darkBg: '#0a0a0a', cardBg: '#161616' }
-                }
+                extend: { colors: { brandBlue: '#0070f3', darkBg: '#0a0a0a', cardBg: '#161616' } }
             }
         }
     </script>
@@ -22,16 +35,69 @@
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: white; scroll-behavior: smooth; }
         .hero-gradient { background: radial-gradient(circle at center, #0070f315 0%, #0a0a0a 100%); }
-        .service-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid #262626; }
-        .service-card:hover { border-color: #0070f3; transform: translateY(-8px); box-shadow: 0 20px 40px -20px rgba(0, 112, 243, 0.4); }
-        .price-badge { background: linear-gradient(90deg, #0070f3, #00a2ff); }
         .logo-glow { filter: drop-shadow(0 0 10px rgba(0, 112, 243, 0.6)); }
+        .service-card { transition: all 0.3s ease; border: 1px solid #262626; }
+        .service-card:hover { border-color: #0070f3; transform: translateY(-5px); }
     </style>
 </head>
 <body>
 
-    <header class="sticky top-0 z-50 bg-darkBg/90 backdrop-blur-xl border-b border-gray-800">
-        <div class="max-w-7xl mx-auto p-4 flex flex-col md:flex-row justify-between items-center gap-4">
-            
-            <div class="flex items-center justify-center md:justify-start">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAABACAYAAABfAnYVAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH6AQSChUAFfS7EAAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUOdl9W4AABX6SURBVHja7Z15fBTVvcc/v7O72SfZN9mTkIQsJCFrWAKEsIUKYhF8isqi9Xm2atXWp9X29Gnt06fPZ99T7fNptbZatVpbrfV5VvGpFvGpigoqi7IqYV8SkhAykX2T7DP77O78/phMJpN9mZkEEpL7+XzyIZm5M3Pnzv2d3/f3+91zY8SIESNGjBgxYsSIESNGjBgxYsSIESNGjBgxYsSIESNGjBgxYsSIESNGjBgxYsSIESNGjBgxYsSIESNGjBgxYsSIESNGjBgxYsSIESNGjBgxYsSIESNGjBgxYsSIESNGjBgxYsSIESNGjBgxYsSIESNGjBgxYnw6Yv6f6f9N8B8A04AF7AH9wDngOHAQeM8T1zRgh7/nI/7/fX7/Vf7n68DngP8LpAOLffshSNoX/OfpBf7m2f9nN7AdOPG/n+Xf7/F6U4B1/vN9Xm8E6APu8N/X9P8pBf7H60n91F8T94FfBv460P5pYByYAdKBeUBKAHxT/f3m+fsc8PeXv98GfB4Y6vV0AeuBn/m9jZfB9iLwReCPgF7gn8C6S9of9N/HdP9zFfAnwAL/vVz+3hC/f6/Xexv4I7/f1A9sBn7m/0zZf/9R8ALwbeC3wHj/e/377/S79vO7NfD77fR/P86/N8u/3zHwK/78Z4ALwJ/7v7fB77vV69kGrPefp9y/P8Xvu93rSfD33+V3rvK7rvX7zPOfp9S/N8Xvf+T3TfT3Z/l9m/3OQf73o/w43wZ+AbzD578Z+IXf2+91rfef7fF60vznKffvT/Z7r/S7b/f7r/R7b/H7bvb7rvS7rvV7v+f3v+H3Nfqdbv99jf/72v/5Wv97Vf/v9wGv+s87B+j7f9/n97vA73X4ffV+X6PfV+/3Tfw03hP/P8R1YAzY/S8/7p64pvm9A35v+G+O68B5wOv13Ais93t7gH8Br/h9r/n9r/p9O4AD/u+PArv9/hXAAp/f1f8Fp/ufo8Dv6fV6evz+Xf7zP/L7Ovxv2e+78P/HAn9vB7DF77/L67nF73vBv78N2Of/v8P/3v1+3/v+O3v858jxX+fP5+83+9877P/e8Fv2e9v9/kS/K9H/7P66Uv0uXf66BvyeS/97t7/Wbr/P6H/f8H+v7X+P+783+p+v/f/43/K5t/mcr/578f/b/u/3v3ej/vNf/L3L89z8P7PDX9vsvXf7v3f5vD799v6f9Z67/e/d/bvef8/8mRov/PzHieYEYMTEixXfBiOnPExMjr87XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XGf/XG
+    <header class="sticky top-0 z-50 bg-darkBg/95 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="logo.png" alt="L-Weaver Studio" class="h-12 md:h-14 logo-glow">
+            </div>
+            <nav class="hidden md:flex space-x-8 text-[10px] uppercase font-bold tracking-widest">
+                <a href="#services" class="hover:text-brandBlue">Услуги</a>
+                <a href="#contact" class="bg-brandBlue px-5 py-2 rounded-full hover:scale-105 transition">Запитване</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-gradient py-24 px-6 text-center">
+        <h1 class="text-5xl md:text-7xl font-black mb-6 uppercase tracking-tighter italic">
+            СКОРОСТ, КОЯТО <br><span class="text-brandBlue">GOOGLE ОБОЖАВА.</span>
+        </h1>
+        <p class="text-gray-400 text-xl max-w-2xl mx-auto mb-10 italic">
+            Чист код, вградено SEO и 100/100 Mobile PageSpeed резултати.
+        </p>
+        <div class="inline-flex items-center space-x-2 bg-green-500/10 border border-green-500/50 px-4 py-2 rounded-full text-green-500 text-xs font-bold uppercase">
+            <span>● 100/100 PageSpeed Insights Готовност</span>
+        </div>
+    </section>
+
+    <section id="services" class="max-w-7xl mx-auto py-20 px-6">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="service-card bg-cardBg p-8 rounded-3xl">
+                <h3 class="text-xl font-bold mb-4 uppercase text-brandBlue italic">E-Commerce Pro</h3>
+                <p class="text-gray-500 text-sm mb-6">Магазин с пълна автоматизация и мобилна оптимизация.</p>
+                <div class="text-3xl font-black mb-6">€850</div>
+                <a href="#contact" class="block text-center border border-brandBlue text-brandBlue py-3 rounded-xl font-bold uppercase text-[10px]">Избери</a>
+            </div>
+            <div class="service-card bg-cardBg p-8 rounded-3xl border-brandBlue/50 shadow-xl shadow-brandBlue/10">
+                <h3 class="text-xl font-bold mb-4 uppercase text-white italic">Technical SEO</h3>
+                <p class="text-gray-500 text-sm mb-6">Постигане на 100/100 скорост и правилна JSON-LD структура.</p>
+                <div class="text-3xl font-black mb-6">€150</div>
+                <a href="#contact" class="block text-center bg-brandBlue py-3 rounded-xl font-bold uppercase text-[10px]">Поръчай</a>
+            </div>
+            <div class="service-card bg-cardBg p-8 rounded-3xl">
+                <h3 class="text-xl font-bold mb-4 uppercase text-brandBlue italic">AgroBrain Dev</h3>
+                <p class="text-gray-500 text-sm mb-6">Индивидуални софтуерни решения за вашия бизнес.</p>
+                <div class="text-3xl font-black mb-6">€1500+</div>
+                <a href="#contact" class="block text-center border border-gray-800 text-gray-400 py-3 rounded-xl font-bold uppercase text-[10px]">Консултация</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-20 px-6 text-center border-t border-gray-900">
+        <div class="mb-10">
+            <p class="text-2xl font-black tracking-tighter italic mb-2 uppercase">L-Weaver Studio</p>
+            <p class="text-gray-500 text-xs uppercase tracking-widest">Цветелина Стоянова | Независим Разработчик</p>
+        </div>
+        <p class="text-gray-400">Email: <span class="text-white font-bold">lifeweaverlifeweaver@gmail.com</span></p>
+        <p class="text-gray-400 mt-2">Тел: <span class="text-white font-bold">0884468329</span></p>
+        <p class="text-[8px] text-gray-700 mt-16 uppercase tracking-[0.4em]">КЛИЙН-ХОУМ ЕООД | Варна, Зорница</p>
+    </footer>
+
+</body>
+</html>
